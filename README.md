@@ -1,5 +1,5 @@
 # FoundationsOfDataScience-Assignment1
-R Programming assignment
+R Programming assignment  
 (1)	Generate 100 random samples from a univariate normal distribution (default parameters), and compute mean, sd, variance, median, and standard quantiles. Report the quantities.  
 (2)	Plot histogram (experiment with breaks parameter), include only one best plot.  
 (3)	As the data is generated from a normal distribution, one would expect that the data follow a normal distribution, but how to test it. Try “qqnorm” function (understand it first), include your plot. Comment on if the data follows a normal distribution (why or why not)?  
