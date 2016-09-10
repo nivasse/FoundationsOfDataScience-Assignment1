@@ -38,8 +38,8 @@ boxplot(weight~height,data=height_weight_100,main="Box plot of height vs weight"
 #Scatter plot of height vs weight
 plot(height_100,weight_100,main="Scatter plot of height vs weight",xlab="Height in inches", ylab="Weight in lbs", pch=19)
 
-#Normal distribution for height and weight separately
+#5. Normal distribution for height and weight separately
 hist(height_100,main="Normal distribution of height",xlab="Height in inches",ylab="Frequency")
 hist(weight_100,main="Normal distribution of weight",xlab="Weight in lbs",ylab="Frequency")
 
-#Bivariate distribution
+#6. Bivariate distribution
