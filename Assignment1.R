@@ -8,10 +8,11 @@ sd_normdist_100 = sd(normdist_100)
 var_normdist_100 = var(normdist_100)
 median_normdist_100 = median(normdist_100)
 #Standard quantiles ???
+quantile(normdist_100)
 
 #2. Plot histogram (experiment with breaks parameter), include only one best plot.
 dev.new()
-hist(normdist_100, breaks=seq(-3.5,3.5,by=1),main="Histogram of 100 randomly generated normal distribution values")
+hist(normdist_100, breaks=seq(-3.5,3.5,by=1),main="Hist. of 100 randomly generated normal dist. values")
 dev.off()
 
 
@@ -24,8 +25,8 @@ dev.off()
 
 #4. Generate data (100 samples) for 2 random variable (height and weight)
 #Height in inches in increments of 0.5. Weight in lbs in increments of 0.5
-height_100 = sample(seq(from =60 , to = 78, by = 0.5), size = 100, replace = TRUE)
-weight_100 = sample(seq(from = 100, to = 300, by = 0.5), size = 100, replace = TRUE)
+height_100 = rnorm(100, mean = 70, sd = 4)
+weight_100 = rnorm(100, mean = 200, sd = 25)
 height_weight_100 = data.frame(height=height_100,weight=weight_100)
 #Summary statistics of randomly generated height and weight
 summary(height_weight_100)
