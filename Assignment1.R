@@ -44,3 +44,8 @@ hist(height_100,main="Normal distribution of height",xlab="Height in inches",yla
 hist(weight_100,main="Normal distribution of weight",xlab="Weight in lbs",ylab="Frequency")
 
 #6. Bivariate distribution
+mvr_norm=mvrnorm(12000, mu=c(mean(height_100), mean(weight_100)),Sigma=cov(height_weight_100))
+kde_2d=kde2d(mvr_norm[,1],mvr_norm[,2],n=50,h=c(10,10))
+contour(kde_2d, xlab='Height in inches', ylab='Weight in lbs', main="")
+points(height_weight_100, cex=0.25)
+
