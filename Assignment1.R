@@ -2,12 +2,12 @@
 #Compute mean, sd, variance, median, and standard quantiles. Report the quantities
 set.seed(30)
 normdist_100 = rnorm(100, mean = 0, sd = 1)
-print(normdist_100[1])
-mean_normdist_100 = mean(normdist_100)
-sd_normdist_100 = sd(normdist_100)
-var_normdist_100 = var(normdist_100)
-median_normdist_100 = median(normdist_100)
-#Standard quantiles ???
+cat("Mean is",mean(normdist_100))
+cat("Standard deviation is",sd(normdist_100))
+cat("Variance is",var(normdist_100))
+cat("Median is",median(normdist_100))
+#Standard quantiles 
+cat("Quantiles are")
 quantile(normdist_100)
 
 #2. Plot histogram (experiment with breaks parameter), include only one best plot.
